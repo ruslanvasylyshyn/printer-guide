@@ -1,0 +1,64 @@
+---
+---
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чищення принтера — Food Printer Guide</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+
+<body>
+
+    {% include header.html %}
+
+    <main class="print-page">
+        <h1>Чищення принтера</h1>
+
+        <div class="step">
+            <strong>1.</strong> Відкриваємо документ Word.
+        </div>
+
+        <div class="step">
+            <strong>2.</strong> Натискаємо «Файл».
+        </div>
+
+        <div class="step">
+            <strong>3.</strong> Натискаємо «Друк» («Печать»).
+        </div>
+
+        <div class="step">
+            <strong>4.</strong> Натискаємо «Властивості принтера» («Свойства принтера»).
+        </div>
+
+        <div class="step">
+            <strong>5.</strong> У властивостях принтера на вкладці «Головна» («Главная») вибираємо тип паперу «Epson
+            Matte».
+        </div>
+
+        <div class="step">
+            <strong>6.</strong> У розділі «Додаткові налаштування» («Дополнительные настройки») перевіряємо прапорець
+            «Висока швидкість» («Высокая скорость»). Якщо він встановлений — знімаємо.
+        </div>
+
+        <div class="step">
+            <strong>7.</strong> Переходимо у вкладку «Сервіс» («Сервис»), вибираємо «Технологічне прочищення чорнил»
+            («Технологическая прочистка чернил») та виконуємо інструкції на екрані.
+        </div>
+
+        <div class="step">
+            <strong>8.</strong> Переходимо до пункту «Перевірка дюз» («Проверка дюз») та друкуємо тестову сторінку.
+        </div>
+
+        <div class="note">
+            <strong>Важливо:</strong> Пункти 4–6 потрібно виконувати лише один раз під час запуску принтера.
+        </div>
+
+        <button onclick="window.print()">Друкувати інструкцію</button>
+    </main>
+
+</body>
+
+</html>

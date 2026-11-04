@@ -1,0 +1,12 @@
+<header class="site-header">
+    <a href="{{ '/' | relative_url }}" class="logo">Food Printer Guide</a>
+
+    <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}" {% if page.url=='/' %}class="active" {% endif %}>Головна</a>
+        <a href="{{ '/print.html' | relative_url }}" {% if page.url=='/print.html' %}class="active" {% endif %}>Друк</a>
+        <a href="{{ '/cleaning.html' | relative_url }}" {% if page.url=='/cleaning.html' %}class="active" {% endif
+            %}>Чищення</a>
+        <a href="{{ '/videos.html' | relative_url }}" {% if page.url=='/videos.html' %}class="active" {% endif
+            %}>Відео</a>
+    </nav>
+</header>

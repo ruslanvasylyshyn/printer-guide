@@ -1,149 +1,55 @@
-
+---
+---
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Інструкції з використання та обслуговування харчового принтера">
-  <title>Інструкція — Харчовий принтер</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f8fa;
-      color: #20242b;
-    }
-
-    header {
-      padding: 28px 8%;
-      background: white;
-      border-bottom: 1px solid #e8eaed;
-    }
-
-    .logo {
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    main {
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 70px 24px;
-    }
-
-    .intro {
-      margin-bottom: 45px;
-    }
-
-    .intro span {
-      color: #777;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
-
-    h1 {
-      font-size: clamp(32px, 5vw, 48px);
-      margin: 16px 0;
-      letter-spacing: -1.5px;
-    }
-
-    .intro p {
-      color: #707781;
-      font-size: 17px;
-      line-height: 1.6;
-      max-width: 600px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #e8eaed;
-      border-radius: 14px;
-      padding: 26px;
-    }
-
-    .card .number {
-      color: #8a929d;
-      font-size: 13px;
-    }
-
-    .card h2 {
-      font-size: 21px;
-      margin: 22px 0 10px;
-    }
-
-    .card p {
-      color: #707781;
-      line-height: 1.5;
-      font-size: 14px;
-    }
-
-    .status {
-      margin-top: 40px;
-      color: #9299a3;
-      font-size: 13px;
-    }
-
-    footer {
-      padding: 25px;
-      text-align: center;
-      color: #9299a3;
-      font-size: 13px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Інструкції з використання та обслуговування харчового принтера">
+    <title>Інструкція — Харчовий принтер</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 
 <body>
-  <header>
-    <div class="logo">Food Printer Guide</div>
-  </header>
+    {% include header.html %}
 
-  <main>
-    <section class="intro">
-      <span>Довідковий центр</span>
-      <h1>Інструкція до харчового принтера</h1>
-      <p>
-        Усі необхідні інструкції з друку, чищення
-        та обслуговування принтера в одному місці.
-      </p>
-    </section>
+    <main>
+        <section class="intro">
+            <span>Довідковий центр</span>
+            <h1>Інструкція до харчового принтера</h1>
+            <p>
+                Усі необхідні інструкції з друку, чищення
+                та обслуговування принтера в одному місці.
+            </p>
+        </section>
 
-    <section class="cards">
-      <article class="card">
-        <div class="number">01 / ДРУК</div>
-        <h2>Інструкція з друку</h2>
-        <p>Підготовка принтера та налаштування друку.</p>
-      </article>
+        <section class="cards">
+            <a href="print.html" class="card">
+                <div class="number">01 / ДРУК</div>
+                <h2>Інструкція з друку</h2>
+                <p>Підготовка принтера та налаштування друку.</p>
+            </a>
 
-      <article class="card">
-        <div class="number">02 / ДОГЛЯД</div>
-        <h2>Чищення принтера</h2>
-        <p>Інструкція з прочищення чорнил та перевірки дюз.</p>
-      </article>
+            <a href="cleaning.html" class="card">
+                <div class="number">02 / ДОГЛЯД</div>
+                <h2>Чищення принтера</h2>
+                <p>Інструкція з прочищення чорнил та перевірки дюз.</p>
+            </a>
 
-      <article class="card">
-        <div class="number">03 / ВІДЕО</div>
-        <h2>Відеоінструкції</h2>
-        <p>Навчальні відео з поясненнями основних процесів.</p>
-      </article>
-    </section>
+            <a href="videos.html" class="card">
+                <div class="number">03 / ВІДЕО</div>
+                <h2>Відеоінструкції</h2>
+                <p>Навчальні відео з поясненнями основних процесів.</p>
+            </a>
+        </section>
 
-    <div class="status">Версія 1.0 · Інструкція готується</div>
-  </main>
+        <div class="status">Версія 1.0 · Інструкція готується</div>
+    </main>
 
-  <footer>
-    Food Printer Guide
-  </footer>
+    <footer>
+        Food Printer Guide
+    </footer>
 </body>
+
 </html>
