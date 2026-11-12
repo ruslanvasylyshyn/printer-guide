@@ -1,78 +1,126 @@
+
 ---
 ---
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Інструкція з друку — Харчовий принтер</title>
+    <title>Друк — Food Printer Guide</title>
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
-
 <body>
+
     {% include header.html %}
+
     <main class="print-page">
 
+        <section class="instruction-heading">
+            <div>
+                <span class="eyebrow">ПОКРОКОВИЙ ПОСІБНИК</span>
+                <h1>Інструкція з друку</h1>
+                <p>Підготовка та друк на харчовому принтері</p>
+            </div>
+            <span class="version">Версія 1.0</span>
+        </section>
 
-        <h1>Інструкція з друку</h1>
-
-        <div class="step">
-            <strong>1.</strong> Відкриваємо документ Word.
+        <div class="instruction-meta">
+            <span>8 кроків</span>
+            <span>Підготовка та друк</span>
         </div>
 
-        <div class="step">
-            <strong>2.</strong> Натискаємо <strong>«Файл»</strong>.
+        <section class="notice notice-warning">
+            <h3>Перед початком</h3>
+            <p>Увімкніть принтер лівим перемикачем (велику кнопку внизу), а також верхній принтер.</p>
+        </section>
+
+        <section class="instruction-group">
+            <h2>Підготовка принтера</h2>
+
+            <div class="step">
+                <span class="step-number">1</span>
+                <div>
+                    <h3>Відкриваємо документ Word</h3>
+                </div>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <div>
+                    <h3>Натискаємо «Файл»</h3>
+                </div>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <div>
+                    <h3>Натискаємо «Друк» («Печать»)</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="instruction-group settings-group">
+            <h2>Налаштування принтера</h2>
+
+            <p class="group-description">
+                Кроки 4–6 потрібно виконувати лише один раз під час запуску принтера.
+            </p>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <div>
+                    <h3>Відкриваємо властивості принтера</h3>
+                    <p>Натискаємо «Властивості принтера» («Свойства принтера»).</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <span class="step-number">5</span>
+                <div>
+                    <h3>Вибираємо тип паперу</h3>
+                    <p>На вкладці «Головна» («Главная») вибираємо тип паперу «Epson Matte».</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <span class="step-number">6</span>
+                <div>
+                    <h3>Перевіряємо високу швидкість</h3>
+                    <p>У розділі «Додаткові налаштування» («Дополнительные настройки») перевіряємо прапорець «Висока швидкість» («Высокая скорость»). Якщо він встановлений — знімаємо.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="instruction-group">
+            <h2>Процес друку</h2>
+
+            <div class="step">
+                <span class="step-number">7</span>
+                <div>
+                    <h3>Натискаємо «Друк» («Печать»)</h3>
+                    <p>За один раз дозволено друкувати лише один аркуш.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <span class="step-number">8</span>
+                <div>
+                    <h3>Натискаємо кнопку Load</h3>
+                    <p>Після друку зверху принтера загориться червона кнопка. Натискаємо знизу червону круглу кнопку біля напису Load (зліва зверху).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="notice notice-info">
+            <h3>Важливо для наступних сторінок</h3>
+            <p>Для кожної наступної сторінки повторюємо кроки 2, 3, 7 і 8.</p>
+        </section>
+
+        <div class="print-actions">
+            <button onclick="window.print()">Друкувати інструкцію</button>
         </div>
 
-        <div class="step">
-            <strong>3.</strong> Натискаємо <strong>«Друк» («Печать»)</strong>.
-        </div>
-
-        <div class="step">
-            <strong>4.</strong> Натискаємо
-            <strong>«Властивості принтера» («Свойства принтера»)</strong>.
-        </div>
-
-        <div class="step">
-            <strong>5.</strong> У «Властивостях принтера» на вкладці
-            <strong>«Головна» («Главная»)</strong> вибираємо тип паперу
-            <strong>«Epson Matte»</strong>.
-        </div>
-
-        <div class="step">
-            <strong>6.</strong> У «Властивостях принтера» у розділі
-            <strong>«Додаткові налаштування» («Дополнительные настройки»)</strong>
-            перевіряємо, чи встановлено прапорець біля напису
-            <strong>«Висока швидкість» («Высокая скорость»)</strong>.
-            Якщо встановлено — знімаємо його.
-        </div>
-
-        <div class="step">
-            <strong>7.</strong> Натискаємо
-            <strong>«Друк» («Печать»)</strong>.
-        </div>
-
-        <div class="step">
-            <strong>8.</strong> Після виконання попереднього кроку
-            на принтері зверху загориться червона кнопка.
-            Натискаємо знизу кнопку біля напису
-            <strong>Load</strong> (червону круглу, зліва зверху).
-        </div>
-
-        <div class="note">
-            <strong>Важливі примітки:</strong>
-            <ul>
-                <li>Перед початком роботи увімкнути принтер лівим перемикачем (велику кнопку внизу), а також увімкнути
-                    верхній принтер.</li>
-                <li>Кроки 4–6 виконуються лише один раз під час запуску принтера.</li>
-                <li>За один раз можна друкувати лише один аркуш.</li>
-                <li>Для кожної наступної сторінки повторювати кроки 2, 3, 7 і 8.</li>
-            </ul>
-        </div>
-
-        <button onclick="window.print()">Друкувати інструкцію</button>
     </main>
-</body>
 
+</body>
 </html>

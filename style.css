@@ -256,3 +256,159 @@ button:hover {
         border: 1px solid #ccc;
     }
 }
+
+
+/* Оформлення сторінки інструкції */
+
+.instruction-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e8ec;
+}
+
+.eyebrow {
+    color: #7b8490;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.instruction-heading h1 {
+    margin: 10px 0;
+}
+
+.instruction-heading p {
+    color: #707781;
+    margin: 0;
+}
+
+.version {
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #eef0f3;
+    color: #59616b;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.instruction-meta {
+    display: flex;
+    gap: 24px;
+    margin: 20px 0;
+    color: #7b8490;
+    font-size: 13px;
+}
+
+.notice {
+    padding: 18px 22px;
+    margin: 22px 0;
+    border-radius: 12px;
+}
+
+.notice h3 {
+    margin: 0 0 8px;
+}
+
+.notice p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.notice-warning {
+    background: #fff7e8;
+    border: 1px solid #f2dfb8;
+}
+
+.notice-info {
+    background: #edf5ff;
+    border: 1px solid #d5e5f8;
+}
+
+.instruction-group {
+    padding: 24px;
+    margin: 22px 0;
+    background: #fff;
+    border: 1px solid #e5e8ec;
+    border-radius: 14px;
+}
+
+.instruction-group h2 {
+    margin: 0 0 20px;
+    font-size: 21px;
+}
+
+.group-description {
+    margin: -8px 0 20px;
+    color: #52677f;
+    line-height: 1.6;
+}
+
+.settings-group {
+    background: #f3f7fc;
+    border-color: #dce7f4;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid #edf0f3;
+}
+
+.step:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.step-number {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: #edf0f4;
+    color: #343c47;
+    font-weight: 700;
+}
+
+.step h3 {
+    margin: 4px 0 7px;
+    font-size: 16px;
+}
+
+.step p {
+    margin: 0;
+    color: #68717d;
+    line-height: 1.6;
+}
+
+.print-actions {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+@media (max-width: 600px) {
+    .instruction-heading {
+        flex-direction: column;
+    }
+
+    .instruction-meta {
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+
+    .instruction-group {
+        padding: 18px;
+    }
+
+    .step {
+        gap: 12px;
+    }
+}
