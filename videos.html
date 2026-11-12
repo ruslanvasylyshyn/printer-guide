@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Відеоінструкції — Food Printer Guide</title>
+    <title>Відео — Food Printer Guide</title>
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 
@@ -14,22 +14,38 @@
 
     {% include header.html %}
 
-    <main class="print-page">
+    <main class="videos-page">
+
         <h1>Відеоінструкції</h1>
+        <p class="videos-description">
+            Перегляньте відео, щоб ознайомитися з роботою принтера.
+        </p>
 
-        <p>Тут будуть розміщені відео з поясненнями роботи та обслуговування принтера.</p>
+        <section class="video-list">
 
-        <div class="step">
-            <strong>Відео 1.</strong> Підготовка принтера до роботи.
-        </div>
+            <article class="video-card">
+                <h2>Відео 1</h2>
+                <iframe src="https://drive.google.com/file/d/1VLQH1bCdaAQQwU2qqJBNLtl_qCc9FbNq/preview"
+                    allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+                </iframe>
+            </article>
 
-        <div class="step">
-            <strong>Відео 2.</strong> Процес друку.
-        </div>
+            <article class="video-card">
+                <h2>Відео 2</h2>
+                <iframe src="https://drive.google.com/file/d/13efqnCCMHsEaeqDRvEDAIXU-0S-q1DU3/preview"
+                    allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+                </iframe>
+            </article>
 
-        <div class="step">
-            <strong>Відео 3.</strong> Чищення принтера.
-        </div>
+            <article class="video-card">
+                <h2>Відео 3</h2>
+                <iframe src="https://drive.google.com/file/d/1ec6HGGKB44gEE4niCEiStpAzLpiMZ1O3/preview"
+                    allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+                </iframe>
+            </article>
+
+        </section>
+
     </main>
 
 </body>

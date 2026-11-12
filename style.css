@@ -412,3 +412,64 @@ button:hover {
         gap: 12px;
     }
 }
+
+
+/* ===== Сторінка відеоінструкцій ===== */
+
+.videos-page {
+    width: 84%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.videos-page h1 {
+    margin-bottom: 10px;
+}
+
+.videos-description {
+    color: #707781;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.video-card {
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #e5e8ec;
+    border-radius: 14px;
+}
+
+.video-card h2 {
+    margin: 0 0 16px;
+    font-size: 18px;
+}
+
+.video-card iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 9px;
+    background: #f0f1f3;
+}
+
+@media (max-width: 600px) {
+    .videos-page {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .video-list {
+        grid-template-columns: 1fr;
+    }
+
+    .video-card {
+        padding: 12px;
+    }
+}
